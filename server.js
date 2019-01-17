@@ -20,6 +20,5 @@ app.set("view engine", "handlebars");
 var routes= require("./public/assets/js/routes.js");
 app.use("/", routes);
 
-var port = 3000;
 app.listen(port);
 
