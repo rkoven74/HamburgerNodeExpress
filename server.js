@@ -20,7 +20,7 @@ app.set("view engine", "handlebars");
 var routes= require("./public/assets/js/routes.js");
 app.use("/", routes);
 
-app.listen(3000, function (){
-  console.log("App is running on port 3000!");
+app.listen(PORT, function (){
+  console.log(`App is running on port ${PORT}!`);
 });
 
