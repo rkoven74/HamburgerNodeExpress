@@ -2,7 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 var exphbs = require("express-handlebars");
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3000;
 
 var app = express();
 app.use(express.static(__dirname + "/public"));
@@ -20,5 +20,7 @@ app.set("view engine", "handlebars");
 var routes= require("./public/assets/js/routes.js");
 app.use("/", routes);
 
-app.listen(PORT);
+app.listen(3000, function (){
+  console.log("App is running on port 3000!");
+});
 
