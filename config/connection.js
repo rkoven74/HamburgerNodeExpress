@@ -20,13 +20,6 @@ connection.connect(function(err) {
   if (err)throw err; {
    
   console.log("connected as id " + connection.threadId);
-
-connection.query(`CREATE TABLE [IF NOT EXISTS] burgers (
-	id int NOT NULL AUTO_INCREMENT,
-	burger_name varchar(255) NOT NULL,
-	devoured BOOLEAN DEFAULT false,
-	PRIMARY KEY (id)
-)`);
   }
 });
 
