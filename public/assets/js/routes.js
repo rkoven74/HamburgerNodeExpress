@@ -16,6 +16,7 @@ router.put('/burger/update', function(req, res){
     });
 });
 router.post('/burger/create', function(req,res) {
+    console.log(req.body);
     burger.create(req.body.burger_name, function(result){
         res.redirect('/');
     })
